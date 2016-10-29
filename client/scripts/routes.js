@@ -1,0 +1,64 @@
+import { Config } from 'angular-ecmascript/module-helpers';
+
+export default class RoutesConfig extends Config {
+  configure() {
+    this.$stateProvider
+      .state('tab', {
+        url: '/farm',
+        templateUrl: 'client/templates/tabs.html'
+      })
+      .state('tab.landing', {
+        url: '/landing',
+        views: {
+          'tab-landing': {
+            templateUrl: 'client/templates/landing.html',
+          }
+        }
+      })
+      .state('tab.faq', {
+        url: '/FAQ',
+        views: {
+          'tab-landing': {
+            templateUrl: 'client/templates/faq.html',
+          }
+        }
+      })
+      .state('tab.farminfo', {
+        url: '/farminfo',
+        views: {
+          'tab-landing': {
+            templateUrl: 'client/templates/farminfo.html',
+          }
+        }
+      })
+      .state('tab.users', {
+        url: '/profile',
+        views: {
+          'tab-landing': {
+            templateUrl: 'client/templates/users.html',
+          }
+        }
+      })
+      .state('tab.login', {
+        url: '/login',
+        views: {
+          'tab-landing': {
+            templateUrl: 'client/templates/login.html',
+          }
+        }
+      })
+      .state('tab.farmer', {
+        url: '/farmer',
+        views: {
+          'tab-landing': {
+            templateUrl: 'client/templates/farmer.html',
+          }
+        }
+      });
+
+
+    this.$urlRouterProvider.otherwise('farm');
+  }
+}
+
+RoutesConfig.$inject = ['$stateProvider', '$urlRouterProvider'];
