@@ -32,13 +32,12 @@ function onReady() {
   Angular.bootstrap(document, [App]);
 }
 
+// Parallax for landing page
 var jumboHeight = $('.jumbotron').outerHeight();
 function parallax(){
     var scrolled = $(window).scrollTop();
     $('.bg').css('height', (jumboHeight-scrolled) + 'px');
 }
-
-
 
 $(window).scroll(function(e){
     parallax();
