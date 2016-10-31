@@ -54,6 +54,17 @@
 /*RAD CSS*/
 .mainContain{
   padding: 2vw;
+  display:flex;
+  flex-direction: column;
+}
+
+.formContain{
+  padding: 2vw;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  border: .15vw solid rgba(0, 0, 0, .3);
+  border-radius: .5em;
 }
 
 .marginTop{

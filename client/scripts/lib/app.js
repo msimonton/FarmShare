@@ -8,6 +8,7 @@ import Loader from 'angular-ecmascript/module-loader';
 import { Meteor } from 'meteor/meteor';
 
 // Modules
+import signup from '../controllers/signup.controller';
 import RoutesConfig from '../routes';
 const App = 'Farmshare';
 
@@ -18,6 +19,7 @@ Angular.module(App, [
 ]);
 
 new Loader(App)
+  .load(signup)
   .load(RoutesConfig);
 
 // Startup
