@@ -54,7 +54,16 @@ export default class RoutesConfig extends Config {
             templateUrl: 'client/templates/farmer.html',
           }
         }
-      });
+      })
+      .state('tab.memberform', {
+        url: '/memberform',
+        views: {
+          'tab-landing': {
+            templateUrl: 'client/templates/memberform.html',
+            controller: 'signup'
+          }
+        }
+      })
 
 
     this.$urlRouterProvider.otherwise('farm');
