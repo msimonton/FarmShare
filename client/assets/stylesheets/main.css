@@ -1,15 +1,18 @@
 /* CSS declarations go here */
 .bg {
-  background: url('../images/farm_wide_shot.jpg');
-  position: fixed;
-  height: 350px; /*same height as jumbotron */
+  background-image: url(/farm-2.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 400px; /*same height as jumbotron */
   top:0;
   left:0;
   z-index: -1;
 }
 
 .customJumbotron {
-  height: 350px;
+  height: 400px;
   width: 100%;
   color: white;
   text-shadow: #444 0 1px 1px;
