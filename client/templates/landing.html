@@ -7,10 +7,10 @@
       </div>
         <source src="SunriseonFarm.mp4" type="video/mp4">
   </video> -->
-  <div id="bgvid">
+  <div id="vidContainer">
     <div id="farmshareText">
-      <h1 class='farmshareText'>FarmShare</h1>
-      <p class='farmshareText'>Directly connecting you to your local farmers.</p>
+      <h1 class='farmshareText mainJumboText'>FarmShare</h1>
+      <p class='farmshareText jumboText'>Directly connecting you to your local farmers.</p>
     </div>
     <video src="/SunriseonFarm.mp4" playsinline autoplay muted loop id="bgvid">
     </video>
@@ -18,12 +18,85 @@
 
 
 
-    <ul class="container">
+  <div class="flex">
+    <div class="container dropContainer">
+      <h2>Filters</h2>
+      <div class="dropdown dropdownClass">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Location
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Within 3 miles</a></li>
+          <li><a href="#">Within 5 miles</a></li>
+          <li><a href="#">Within 10 miles</a></li>
+          <li><a href="#">Within 20 miles</a></li>
+          <li><a href="#">Within 50 miles</a></li>
+          <li><a href="#">Within 100 miles</a></li>
+        </ul>
+      </div>
+      <div class="dropdown dropdownClass">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Price
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Low to High</a></li>
+          <li><a href="#">High to Low</a></li>
+        </ul>
+      </div>
+      <div class="dropdown dropdownClass">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Product
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Eggs</a></li>
+          <li><a href="#">Milk</a></li>
+          <li><a href="#">Milk</a></li>
+          <li><a href="#">Chicken</a></li>
+          <li><a href="#">Pork</a></li>
+          <li><a href="#">Beef</a></li>
+          <li><a href="#">Misc</a></li>
+        </ul>
+      </div>
+      <div class="dropdown dropdownClass">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Organic Labels
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">USDA 100% Organic</a></li>
+          <li><a href="#">USDA Organic</a></li>
+          <li><a href="#">Made with organic ingredients</a></li>
+          <li><a href="#">Contains organic ingredients</a></li>
+          <li><a href="#">Non GMO Project Verified</a></li>
+        </ul>
+      </div>
+      <div class="dropdown dropdownClass">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Meat/dairy labels
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">Natural or all natural</a></li>
+          <li><a href="#">Naturally raised</a></li>
+          <li><a href="#">Grass-fed</a></li>
+          <li><a href="#">Free-range</a></li>
+          <li><a href="#">Cage-free</a></li>
+          <li><a href="#">Pasture-raised</a></li>
+          <li><a href="#">No hormones added/hormone-free</a></li>
+          <li><a href="#">Certified Humane Raised and Handled</a></li>
+        </ul>
+      </div>
+      <div class="dropdown dropdownClass">
+        <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Farmer Rating
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu">
+          <li><a href="#">1 star</a></li>
+          <li><a href="#">2 stars</a></li>
+          <li><a href="#">3 stars</a></li>
+          <li><a href="#">4 stars</a></li>
+          <li><a href="#">5 stars</a></li>
+        </ul>
+      </div>
+    </div>
+
       <div class="farmSnapshot">
         <h2 class="farmName"></h2>
         <p class="farmInfo"></p>
         <a href="" class='seeMore'>See More</a>
       </div>
-    </ul>
+    </div>
   </ion-content>
 </ion-view>
