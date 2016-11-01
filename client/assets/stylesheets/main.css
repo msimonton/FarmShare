@@ -32,16 +32,20 @@
 .mainContain{
   padding: 2vw;
   display:flex;
+  justify-content: center;
   flex-direction: column;
 }
 
 .formContain{
   padding: 2vw;
+  width: 50vw;
   display:flex;
   justify-content: center;
   flex-direction: column;
   border: .15vw solid rgba(0, 0, 0, .3);
   border-radius: .5em;
+  margin-left: 25%;
+  margin-top: 2%;
 }
 
 .marginTop{
@@ -64,6 +68,13 @@
   padding-left: .5vw;
   border: .15vw solid rgba(0, 0, 0, .3);
   border-radius: .5em;
+}
+
+.marginLR > textarea{
+  border: .15vw solid rgba(0, 0, 0, .3);
+  border-radius: .5em;
+  margin-left: 1vw;
+  margin-bottom: .5vw;
 }
 
 .align{
@@ -90,4 +101,14 @@
   max-width: 20vw;
   background-image: url('https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAjfAAAAJDY5MjRlMDhmLWFhMWItNDdlOS1iNTE1LTA4YWQ4Y2ZlYzZiNA.jpg');
   background-position: center;
+}
+
+.formButton {
+  height: 3vw;
+  width: 16vw;
+  border-radius: 2em;
+}
+
+.products{
+  width: 40vw;
 }
