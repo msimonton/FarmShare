@@ -23,11 +23,11 @@ export default class RoutesConfig extends Config {
           }
         }
       })
-      .state('tab.farminfo', {
-        url: '/farminfo',
+      .state('tab.farmInfo', {
+        url: '/farmInfo',
         views: {
           'tab-landing': {
-            templateUrl: 'client/templates/farminfo.html',
+            templateUrl: 'client/templates/farmInfo.html',
           }
         }
       })
