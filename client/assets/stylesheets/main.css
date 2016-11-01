@@ -59,6 +59,21 @@ video {
 /*RAD CSS*/
 .mainContain{
   padding: 2vw;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.formContain{
+  padding: 2vw;
+  width: 50vw;
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  border: .15vw solid rgba(0, 0, 0, .3);
+  border-radius: .5em;
+  margin-left: 25%;
+  margin-top: 2%;
 }
 
 .marginTop{
@@ -72,6 +87,22 @@ video {
 .marginLR{
   margin-right: 2vw;
   margin-left: 2vw;
+}
+
+.marginLR > input{
+  margin-left: 1vw;
+  margin-bottom: .5vw;
+  padding: .25vw;
+  padding-left: .5vw;
+  border: .15vw solid rgba(0, 0, 0, .3);
+  border-radius: .5em;
+}
+
+.marginLR > textarea{
+  border: .15vw solid rgba(0, 0, 0, .3);
+  border-radius: .5em;
+  margin-left: 1vw;
+  margin-bottom: .5vw;
 }
 
 .align{
@@ -101,4 +132,13 @@ video {
 }
 .navbar-default {
   margin: 0 !important;
+}
+.formButton {
+  height: 3vw;
+  width: 16vw;
+  border-radius: 2em;
+}
+
+.products{
+  width: 40vw;
 }
