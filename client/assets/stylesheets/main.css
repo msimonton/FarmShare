@@ -1,16 +1,17 @@
 video {
   padding: 0;
   margin-top: 0;
-  position: fixed;
+  padding-top: 0;
+  position: relative;
   top: 50%;
   left: 50%;
   min-width: 100%;
-  min-height: 100%;
+  min-height: 80%;
   width: auto;
   height: auto;
-  z-index: -100;
+  z-index: 1;
   transform: translateX(-50%) translateY(-50%);
-  background-clip: url(/SunriseFarm.mp4) no-repeat;
+  /*background-clip: url(/SunriseFarm.mp4);*/
   background-size: cover;
   transition: 1s opacity;
 }
@@ -19,29 +20,34 @@ video {
 }
 
 #farmshareText {
+  font-family: 'Roboto', sans-serif;
   font-weight:100;
+  position: absolute;
   background: rgba(0,0,0,0.3);
   color: white;
-  padding: 2rem;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  /*padding: 2rem;
   width: 40%;
   margin-top: 350px;
   margin-left: 30%;
+  z-index: 1;*/
 }
-.mainJumboText {
+
+/*.mainJumboText {
   font-size: 6rem !important;
   margin-top: 0;
   letter-spacing: .3rem;
 }
-
 .jumboText {
   display: inline-block;
   color: #fff;
   text-decoration: none;
-  /*background:rgba(0,0,0,0.3);*/
   padding: .5rem;
-  /*transition: .6s background;*/
   font-size: 2.5em;
-}
+}*/
 /*END OF VIDEO STyLING*/
 
 

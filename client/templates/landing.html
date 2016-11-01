@@ -1,11 +1,29 @@
 <ion-view view-title="landing">
   <ion-content>
-    <video playsinline autoplay muted loop id="bgvid">
+    <!-- <video playsinline autoplay muted loop id="bgvid">
+      <div id="farmshareText">
+        <h1 class='mainJumboText'>FarmShare</h1>
+        <p class='jumboText'>Directly connecting you to your local farmers.</p>
+      </div>
         <source src="SunriseonFarm.mp4" type="video/mp4">
-    </video>
+  </video> -->
+  <div id="bgvid">
     <div id="farmshareText">
-      <h1 class='mainJumboText'>FarmShare</h1>
-      <p class='jumboText'>Directly connecting you to your local farmers.</p>
+      <h1 class='farmshareText'>FarmShare</h1>
+      <p class='farmshareText'>Directly connecting you to your local farmers.</p>
     </div>
+    <video src="/SunriseonFarm.mp4" playsinline autoplay muted loop id="bgvid">
+    </video>
+  </div>
+
+
+
+    <ul class="container">
+      <div class="farmSnapshot">
+        <h2 class="farmName"></h2>
+        <p class="farmInfo"></p>
+        <a href="" class='seeMore'>See More</a>
+      </div>
+    </ul>
   </ion-content>
 </ion-view>
