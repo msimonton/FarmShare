@@ -9,6 +9,7 @@ import { Meteor } from 'meteor/meteor';
 
 // Modules
 import signup from '../controllers/signup.controller';
+import faq from '../controllers/faq.controller';
 import RoutesConfig from '../routes';
 const App = 'Farmshare';
 
@@ -33,14 +34,3 @@ else {
 function onReady() {
   Angular.bootstrap(document, [App]);
 }
-
-// Parallax for landing page
-// var jumboHeight = $('.customJumbotron').outerHeight();
-// function parallax(){
-//     var scrolled = $(window).scrollTop();
-//     $('.bg').css('height', (jumboHeight-scrolled) + 'px');
-// }
-//
-// $(window).scroll(function(e){
-//     parallax();
-// });

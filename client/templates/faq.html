@@ -1,4 +1,5 @@
-<!-- Post Card Views -->
+<ion-view view-title="login">
+  <ion-content>
     <div class="container">
       <div class="ng-cloak row border">
         <div class="col-xs-2 imgContainer">
@@ -7,13 +8,16 @@
         <div class="col-xs-offset-2 col-xs-10" >
           <h4>How is organic farming different from conventional farming?</h4>
           <br>
-          <p class="">Organic farming refers to agricultural production systems that do not use genetically modified (GM) seed, synthetic pesticides or fertilizers. Some of the essential characteristics of organic systems include: design and implementation of an organic system plan that describes the practices used in producing crops and livestock products; a detailed recordkeeping system that tracks all products from the field to point of sale; and maintenance of buffer zones to prevent inadvertent contamination by synthetic farm chemicals from adjacent conventional fields.
+          <div><a class='linkCursor' ng-click="toggleAnswerView()"><span class=" glyphicon glyphicon-plus"></span> See Answer</a></div>
+          <div ng-class="{ hide: view.isClicked }">
+          <p class="" ng-show="showAnswer">Organic farming refers to agricultural production systems that do not use genetically modified (GM) seed, synthetic pesticides or fertilizers. Some of the essential characteristics of organic systems include: design and implementation of an organic system plan that describes the practices used in producing crops and livestock products; a detailed recordkeeping system that tracks all products from the field to point of sale; and maintenance of buffer zones to prevent inadvertent contamination by synthetic farm chemicals from adjacent conventional fields.
 
           Organic farmers use biological methods and management practices such as diversified crop rotations that improve soil quality. Organic farming increases soil organic matter, which enhances the soil's ability to absorb and store carbon, cycle nutrients, and absorb water. Increased soil organic matter contributes to greater resilience under stresses such as drought and flooding.</p>
-              <span class="linkCursor" ng-click="toggleCommentView(post)">
-            
-              </span>
-              <a href='www. .com' class="pull-right">Source:</p>
+              <a href='www. .com' class="pull-right">Source:
 
             </p>
           </div>
+
+          </div>
+        </ion-content>
+      </ion-view>
