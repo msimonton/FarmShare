@@ -6,6 +6,66 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
     <link rel="stylesheet" ng-href="/assets/stylesheets/main.css">
 
+
+
+    <link href="http://www.loringdodge.com/files/ionic.min.css" rel="stylesheet">
+<link href="http://www.loringdodge.com/files/nifty.modal.css" rel="stylesheet">
+
+
+<script src="http://code.ionicframework.com/collide/0.0.4/collide.js"></script>
+
+<script src="http://www.loringdodge.com/files/ionic.bundle.min.js"></script>
+<script src="http://www.loringdodge.com/files/ionic.tdcards.js"></script>
+
+<script id="my-modal.html" type="text/ng-template">
+<ion-modal-view class="ion-nifty-modal">
+  <div class="ion-modal-content-custom">
+    <ion-content class="padding">
+
+
+      <div class="formContain center" ng-show="showMember">
+        <h1 class="marginBottom">Member Sign Up</h1>
+        <form class="marginLR">
+          <label class="marginTop" for="firstName">Please Enter Your Name</label>
+          <input type="text" name="firstName" placeholder="First" required/>
+          <input type="text" name="lastName" placeholder="Last" required/>
+          <label class="marginTop" for="image_url">Profile Picture</label>
+          <input type="url" name="image_url"/>
+          <label class="marginTop" for="location">Where are you located</label>
+          <input type="text" name="location" placeholder="City, State" required/>
+        </form>
+      </div>
+
+      <div class="formContain" ng-show="showFarmer">
+        <h1 class="marginBottom">Grower Sign Up</h1>
+        <form class="marginLR">
+          <label class="marginTop" for="firstName">Please Enter Your Name</label>
+          <input type="text" name="firstName" placeholder="First" required/>
+          <input type="text" name="lastName" placeholder="Last" required/>
+          <label class="marginTop" for="image_url">Profile Picture</label>
+          <input type="url" name="image_url"/>
+          <label class="marginTop" for="location">Where are you located</label>
+          <input type="text" name="location" placeholder="City, State" required/>
+          <label class="marginTop" for="info">Info About Your Farm</label>
+          <textarea rows="4" cols="50" name="info"></textarea>
+          <label class="marginTop" for="products">What Are You Offering?</label>
+          <input type="text" class="products" name="products" placeholder="Entries separated by comma eg: Sweet Corn, Pumpkins, Squash" required/>
+        </form>
+      </div>
+
+
+
+
+
+
+
+
+      <button class="button button-full button-positive" ng-click="closeModal()">Close Modal</button>
+    </ion-content>
+  </div>
+</ion-modal-view>
+</script>
+
 </head>
 
 <body>
