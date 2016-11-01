@@ -34,10 +34,13 @@ function onReady() {
   Angular.bootstrap(document, [App]);
 }
 
-var vid = document.getElementById("bgvid");
-
-var pauseButton = document.querySelector("#polina button");
-
-function vidFade() {
-  vid.classList.add("stopfade");
-}
+// Parallax for landing page
+// var jumboHeight = $('.customJumbotron').outerHeight();
+// function parallax(){
+//     var scrolled = $(window).scrollTop();
+//     $('.bg').css('height', (jumboHeight-scrolled) + 'px');
+// }
+//
+// $(window).scroll(function(e){
+//     parallax();
+// });
