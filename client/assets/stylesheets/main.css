@@ -6,6 +6,7 @@
   background: #000;
 }*/
 video {
+  padding: 0;
   margin-top: 0;
   position: fixed;
   top: 50%;
@@ -31,6 +32,7 @@ video {
   padding: 2rem;
   width: 40%;
   margin-top: 350px;
+  margin-left: 30%;
 }
 .mainJumboText {
   font-size: 6rem !important;
@@ -96,4 +98,7 @@ video {
   max-width: 20vw;
   background-image: url('https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAjfAAAAJDY5MjRlMDhmLWFhMWItNDdlOS1iNTE1LTA4YWQ4Y2ZlYzZiNA.jpg');
   background-position: center;
+}
+.navbar-default {
+  margin: 0 !important;
 }
