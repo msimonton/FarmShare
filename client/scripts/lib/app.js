@@ -9,6 +9,8 @@ import { Meteor } from 'meteor/meteor';
 
 // Modules
 import signup from '../controllers/signup.controller';
+import product from '../controllers/product.controller';
+import productinput from '../controllers/productinput.controller';
 import faq from '../controllers/faq.controller';
 import RoutesConfig from '../routes';
 const App = 'Farmshare';
@@ -21,6 +23,8 @@ Angular.module(App, [
 
 new Loader(App)
   .load(signup)
+  .load(product)
+  .load(productinput)
   .load(RoutesConfig);
 
 // Startup
