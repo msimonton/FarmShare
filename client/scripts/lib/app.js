@@ -9,6 +9,9 @@ import { Meteor } from 'meteor/meteor';
 
 // Modules
 import signup from '../controllers/signup.controller';
+import product from '../controllers/product.controller';
+import productinput from '../controllers/productinput.controller';
+import faq from '../controllers/faq.controller';
 import RoutesConfig from '../routes';
 const App = 'Farmshare';
 
@@ -57,6 +60,8 @@ Angular.module(App, [
 
 new Loader(App)
   .load(signup)
+  .load(product)
+  .load(productinput)
   .load(RoutesConfig);
 
 // Startup
@@ -70,23 +75,5 @@ else {
 function onReady() {
   Angular.bootstrap(document, [App]);
 }
-
-
-
-
-
-
-
-
-
-
-// Parallax for landing page
-// var jumboHeight = $('.customJumbotron').outerHeight();
-// function parallax(){
-//     var scrolled = $(window).scrollTop();
-//     $('.bg').css('height', (jumboHeight-scrolled) + 'px');
-// }
-//
-// $(window).scroll(function(e){
-//     parallax();
-// });
+<<<<<<< HEAD
+>>>>>>> 3fd231227028c8137c2f05fc95c6dbf28517b295

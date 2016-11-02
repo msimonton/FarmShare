@@ -23,11 +23,12 @@ export default class RoutesConfig extends Config {
           }
         }
       })
-      .state('tab.farmInfo', {
-        url: '/farmInfo',
+      .state('tab.farminfo', {
+        url: '/farminfo',
         views: {
           'tab-landing': {
             templateUrl: 'client/templates/farmInfo.html',
+            controller: 'ProductCtrl as product'
           }
         }
       })
@@ -64,9 +65,18 @@ export default class RoutesConfig extends Config {
           }
         }
       })
+      .state('tab.productinput', {
+        url: '/productinput',
+        views: {
+          'tab-landing': {
+            templateUrl: 'client/templates/productinput.html',
+            controller:'ProductInputCtrl as product'
+          }
+        }
+      });
 
 
-    this.$urlRouterProvider.otherwise('farm')
+    this.$urlRouterProvider.otherwise('farm/landing')
   }
 }
 
