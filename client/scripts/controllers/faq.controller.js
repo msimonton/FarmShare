@@ -9,6 +9,7 @@ export default class faq extends Controller {
     $scope.showAnswer3 = false
     $scope.showAnswer4 = false
     $scope.showAnswer5= false
+    $scope.showAnswer6= false
 
     $scope.toggleAnswerView = function () {
       $scope.showAnswer = !$scope.showAnswer;
@@ -27,6 +28,9 @@ export default class faq extends Controller {
     }
     $scope.toggleAnswerView5 = function () {
       $scope.showAnswer5 = !$scope.showAnswer5;
+    }
+    $scope.toggleAnswerView6 = function () {
+      $scope.showAnswer6 = !$scope.showAnswer6;
     }
   }
 }

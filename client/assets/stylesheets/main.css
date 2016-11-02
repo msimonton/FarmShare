@@ -1,4 +1,4 @@
-body {
+html, body {
   height: 100%;
   width: 100%;
 }
@@ -12,25 +12,19 @@ body {
   position: fixed;
   max-height: 500px;
   min-width: 100%;
-  /*transform: translateY(-40%);*/
-  /*transform: translateY(0px);*/
 }
+
 video {
   padding: 0;
   margin-top: 0;
   padding-top: 0;
   position: relative;
-  /*min-height: 40%;*/
   width: auto;
-  /*height: 100%;*/
   width: 100%;
   min-width: 100%;
   z-index: 1;
   transform: translateY(-45%);
-  /*background-clip: url(/SunriseFarm.mp4);*/
- /*transition: 1s opacity;*/
- /*top: -200px;*/
- margin-bottom: -30%;
+  margin-bottom: -30%;
 }
 .stopfade {
    opacity: .5;
