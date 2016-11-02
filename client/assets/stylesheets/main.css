@@ -1,50 +1,77 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+.navbar {
+  margin: 0 !important;
+}
+.center{
+  justify-content: center;
+}
+.vidContainer{
+  position: fixed;
+  max-height: 500px;
+  min-width: 100%;
+}
+
 video {
   padding: 0;
   margin-top: 0;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
+  padding-top: 0;
+  position: relative;
   width: auto;
-  height: auto;
-  z-index: -100;
-  transform: translateX(-50%) translateY(-50%);
-  background-clip: url(/SunriseFarm.mp4) no-repeat;
-  background-size: cover;
-  transition: 1s opacity;
+  width: 100%;
+  min-width: 100%;
+  z-index: 1;
+  transform: translateY(-45%);
+  margin-bottom: -30%;
 }
 .stopfade {
    opacity: .5;
 }
 
 #farmshareText {
+  font-family: 'Roboto', sans-serif;
   font-weight:100;
+  position: absolute;
   background: rgba(0,0,0,0.3);
   color: white;
-  padding: 2rem;
-  width: 40%;
-  margin-top: 350px;
-  margin-left: 30%;
-}
-.mainJumboText {
-  font-size: 6rem !important;
-  margin-top: 0;
-  letter-spacing: .3rem;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  z-index: 2;
 }
 
+.mainJumboText {
+  font-size: 5rem !important;
+  margin-top: 0;
+  letter-spacing: .2rem;
+  color: #fff !important;
+}
 .jumboText {
-  display: inline-block;
-  color: #fff;
+  color: #fff !important;
   text-decoration: none;
-  /*background:rgba(0,0,0,0.3);*/
-  padding: .5rem;
-  /*transition: .6s background;*/
-  font-size: 2.5em;
+  font-size: 2em !important;
 }
 /*END OF VIDEO STyLING*/
 
+.flex{
+  display: flex;
+    justify-content: space-around;
+}
+.dropContainer{
+  width: 25% !important;
+  border: black solid 1px;
+}
+.dropdownClass{
+  padding: 5px;
+}
+.farmSnapshot{
+  width: 65%;
+  border: black solid 1px;
+  margin-right: 20px;
 
+}
 .tabs {
   display: none;
 }
