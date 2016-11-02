@@ -25,6 +25,7 @@ new Loader(App)
   .load(signup)
   .load(product)
   .load(productinput)
+  .load(faq)
   .load(RoutesConfig);
 
 // Startup

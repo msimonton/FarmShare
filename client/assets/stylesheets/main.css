@@ -2,6 +2,12 @@ body {
   height: 100%;
   width: 100%;
 }
+.navbar {
+  margin: 0 !important;
+}
+.center{
+  justify-content: center;
+}
 .vidContainer{
   position: fixed;
   max-height: 500px;

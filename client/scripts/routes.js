@@ -20,6 +20,7 @@ export default class RoutesConfig extends Config {
         views: {
           'tab-landing': {
             templateUrl: 'client/templates/faq.html',
+            controller: 'faq'
           }
         }
       })
