@@ -66,6 +66,14 @@ export default class RoutesConfig extends Config {
           }
         }
       })
+      .state('tab.editfarm', {
+        url: '/memberform',
+        views: {
+          'tab-landing': {
+            templateUrl: 'client/templates/memberform.html',
+          }
+        }
+      })
       .state('tab.productinput', {
         url: '/productinput',
         views: {

@@ -1,30 +1,20 @@
-      <div class="formContain center" ng-show="showMember">
-        <h1 class="marginBottom">Member Sign Up</h1>
-        <form class="marginLR">
-          <label class="marginTop" for="firstName">Please Enter Your Name</label>
-          <input type="text" name="firstName" placeholder="First" required/>
-          <input type="text" name="lastName" placeholder="Last" required/>
-          <label class="marginTop" for="image_url">Profile Picture</label>
-          <input type="url" name="image_url"/>
-          <label class="marginTop" for="location">Where are you located</label>
-          <input type="text" name="location" placeholder="City, State" required/>
-        </form>
-      </div>
+
 
       <div class="formContain" ng-show="showFarmer">
         <h1 class="marginBottom">Grower Sign Up</h1>
         <form class="marginLR" >
-          <label class="marginTop"for="firstName">Please Enter Your Name</label>
-          <input type="text" name="firstName" ng-model='farmer.firstName'placeholder="First" required/>
-          <input type="text" name="lastName" ng-model='farmer.lastName'placeholder="Last" required/>
-          <label class="marginTop" for="image_url">Profile Picture</label>
-          <input type="url" name="imageUrl" ng-model='farmer.imageUrl'/>
+          <label class="marginTop"for="farmName">Please Enter Your Name</label>
+          <input type="text" name="farmName" ng-model='farmer.farmName'placeholder="First" required/>
           <label class="marginTop" for="location">Where are you located</label>
           <input type="text" name="location" ng-model='farmer.location' placeholder="City, State" required/>
+          <input type="text" name="phoneNumber" ng-model='farmer.phoneNumber'placeholder="Phone Number" required/>
+          <label class="marginTop" for="image_url">Picture URL</label>
+          <input type="url" name="imageUrl" ng-model='farmer.imageUrl'/>
           <label class="marginTop" for="info">Info About Your Farm</label>
           <textarea rows="4" cols="50" name="info" ng-model='farmer.info'></textarea>
-          <label class="marginTop" for="products">What Are You Offering?</label>
-          <input type="text" class="products" ng-model='farmer.products' name="products" placeholder="Entries separated by comma eg: Sweet Corn, Pumpkins, Squash" required/>
           <button ng-click="farmer.submit()">submit</button>
         </form>
+        <div id='closeButton'>
+          <a href="/#/farm/landing">Close</button>
+        </div>
       </div>

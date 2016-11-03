@@ -12,10 +12,14 @@ import { Farmers, Members, Products } from '../lib/collections';
      const products = [
        {
          product: 'orange',
+         description:'A round orange fruit',
+         price:'$2.00',
          timestamp: Moment().subtract(1, 'hours').toDate()
        },
        {
          product: 'meat',
+         description:'dead stuff',
+         price:'$3.00/lb',
          timestamp: Moment().subtract(2, 'hours').toDate()
        },
      ];
@@ -28,22 +32,22 @@ import { Farmers, Members, Products } from '../lib/collections';
 
 
      const farmers = [
-  {
-    firstName:'Jim',
-    lastName:'Bob',
-    imageUrl:'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7lQ4h5J0NI_11yS9hGonV93fu7ktvNP6KPKXATBP_bx5XjNjOo3dG9G94',
-    location:'Denver',
-    info:'Goats n such',
-    products:'Goat cheese',
-    timestamp: Moment().subtract(1, 'hours').toDate()
-  },
     {
-      firstName:'Mary',
-      lastName:'Sue',
-      imageUrl:'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7lQ4h5J0NI_11yS9hGonV93fu7ktvNP6KPKXATBP_bx5XjNjOo3dG9G94',
+      farmName:'Goats and More',
       location:'Denver',
-      info:'Apples',
-      products:'Apple sauce',
+      phoneNumber:'3038675309',
+      about:'Apples',
+      user_id:'',
+      imageUrl:'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7lQ4h5J0NI_11yS9hGonV93fu7ktvNP6KPKXATBP_bx5XjNjOo3dG9G94',
+      timestamp: Moment().subtract(1, 'hours').toDate()
+    },
+    {
+      farmName:'Goats and More',
+      location:'Denver',
+      phoneNumber:'3038675309',
+      about:'Apples',
+      user_id:'',
+      imageUrl:'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR7lQ4h5J0NI_11yS9hGonV93fu7ktvNP6KPKXATBP_bx5XjNjOo3dG9G94',
       timestamp: Moment().subtract(1, 'hours').toDate()
     },
 ];
