@@ -4,10 +4,6 @@ import { _ } from 'meteor/underscore';
 import { Meteor } from 'meteor/meteor';
 import Moment from 'moment';
 
-
-
-
-
 export default class ProductInputCtrl extends Controller {
   constructor($scope) {
     super();
