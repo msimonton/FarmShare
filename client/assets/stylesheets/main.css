@@ -49,28 +49,27 @@ video {
    opacity: .5;
 }
 
-#farmshareText {
-  font-family: 'Roboto', sans-serif;
-  font-weight:100;
-  position: absolute;
-  background: rgba(0,0,0,0.3);
-  color: white;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -10%);
-  z-index: 2;
-}
-
 .mainJumboText {
-  font-size: 5rem !important;
-  margin-top: 0;
+  font-size: 3em ;
   letter-spacing: .2rem;
   color: #fff !important;
 }
 .jumboText {
   color: #fff !important;
-  text-decoration: none;
-  font-size: 2em !important;
+  font-size: 1em ;
+}
+#farmshareText {
+  font-family: 'Roboto', sans-serif;
+  font-size: 100% !important;
+  line-height: 3 !important;
+  font-weight:100;
+  position: absolute;
+  background: rgba(0,0,0,0.3);
+  color: white !important;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -20%);
+  z-index: 2;
 }
 /*END OF VIDEO STyLING*/
 .flex{
@@ -181,4 +180,35 @@ video {
 
 .navbar {
   margin: 0 !important;
+}
+
+@media only screen and (min-width: 1100px) {
+#farmshareText {
+  font-size:200% !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+#farmshareText {
+  font-size:60% !important;
+  transform: translate(-50%, -60%);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+#farmshareText {
+  font-size:50% !important;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  }
+}
+  @media only screen and (max-width: 340px) {
+  #farmshareText {
+    font-size:50% !important;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    width: 50%;
+    }
 }
