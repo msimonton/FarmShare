@@ -70,6 +70,7 @@ a.linkcursor{
   left: 50%;
   transform: translate(-50%, 100%);
   z-index: 2;
+  border-radius: 10px;
 }
 .floatLeft{
   position: absolute;
