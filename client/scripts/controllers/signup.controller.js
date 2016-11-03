@@ -21,7 +21,6 @@ export default class FarmerInputCtrl extends Controller {
   };
 
   submit(){
-    console.log(this.farmer)
     Farmers.insert({farmName: this.farmName, phoneNumber: this.phoneNumber, imageUrl: this.imageUrl, location: this.location, info: this.info, user_id:this.user_id, timestamp: Moment().subtract(1, 'hours').toDate()});
     this.reset();
   }
