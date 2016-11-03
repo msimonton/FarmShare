@@ -15,6 +15,16 @@ export default class RoutesConfig extends Config {
           }
         }
       })
+
+      .state('tab.rdTemplate1', {
+        url: '/rd',
+        views: {
+          'tab-landing': {
+            templateUrl: 'client/templates/ColinRDtemplate/rdTemplate1.html',
+          }
+        }
+      })
+
       .state('tab.faq', {
         url: '/FAQ',
         views: {
