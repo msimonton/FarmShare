@@ -1,6 +1,6 @@
 import Moment from 'moment';
 import { Meteor } from 'meteor/meteor';
-import { Farmers, Members, Products } from '../lib/collections';
+import { Users, Products } from '../lib/collections';
 
 
   Meteor.startup(function() {

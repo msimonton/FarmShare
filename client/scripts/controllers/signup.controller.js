@@ -1,9 +1,9 @@
-
 import { Controller } from 'angular-ecmascript/module-helpers';
 import { Farmers } from '../../../lib/collections';
 import { _ } from 'meteor/underscore';
 import { Meteor } from 'meteor/meteor';
 import Moment from 'moment';
+
 
 export default class FarmerInputCtrl extends Controller {
   constructor($scope) {
@@ -15,14 +15,26 @@ export default class FarmerInputCtrl extends Controller {
     }
   };
   submit(){
-    Farmers.insert({farmName: this.farmName, phoneNumber: this.phoneNumber, imageUrl: this.imageUrl, location: this.location, info: this.info, user_id:this.user_id, timestamp: Moment().subtract(1, 'hours').toDate()
-    });
+    Farmers.insert({farmName: this.farmName,
+    phoneNumber: this.phoneNumber,
+    imageUrl: this.imageUrl,
+    location: this.location,
+    info: this.info,
+    user_id:this.user_id,
+    timestamp: Moment().subtract(1, 'hours').toDate()
+  });
     this.reset();
     $window.location.href = '/#/farm/landing';
 
   }
   reset(){
-    this.farmer = "";
+    this.farmName = ""
+    this.phoneNumber = ""
+    this.imageUrl = ""
+    this.location = ""
+    this.info = "";
+
+
   }
 
 }

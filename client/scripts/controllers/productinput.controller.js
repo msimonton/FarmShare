@@ -13,9 +13,13 @@ export default class ProductInputCtrl extends Controller {
       $scope.showMember = !$scope.showProduct
     }
   };
-
   submit(){
-    Products.insert({productName: this.productName, description:this.description, price:this.price, timestamp: Moment().subtract(1, 'hours').toDate()});
+    Products.insert({
+       productName: this.productName,
+       description:this.description,
+       price:this.price,
+       userId: Meteor.userId(),
+       timestamp: Moment().subtract(1, 'hours').toDate()});
     this.reset();
   }
   reset(){

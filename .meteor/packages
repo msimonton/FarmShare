@@ -25,3 +25,9 @@ launch-screen
 check
 npm-bcrypt@0.8.7
 autopublish
+accounts-base
+
+accounts-facebook
+accounts-ui
+accounts-password
+dotansimha:accounts-ui-angular

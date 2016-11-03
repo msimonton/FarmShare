@@ -1,9 +1,29 @@
-html, body {
+body {
   height: 100%;
   width: 100%;
 }
 .navbar {
   margin: 0 !important;
+}
+.faqBody{
+  background-image: url('/farm_wallpaper.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.textBox{
+  background-color: #ffffff;
+  border: 1px solid black;
+  color: white;
+  text-shadow: .5px .5px .5px .5px;
+  background: rgba(0, 0, 0, 0.6);
+}
+.textBox > a{
+  color: white !important;
+}
+.darkBg{
+  background: rgba(0, 0, 0, 0.4);
+  width: 100px;
 }
 .center{
   justify-content: center;
@@ -13,7 +33,6 @@ html, body {
   max-height: 500px;
   min-width: 100%;
 }
-
 video {
   padding: 0;
   margin-top: 0;
@@ -54,7 +73,6 @@ video {
   font-size: 2em !important;
 }
 /*END OF VIDEO STyLING*/
-
 .flex{
   display: flex;
     justify-content: space-around;
@@ -161,6 +179,7 @@ video {
   width: 40vw;
 }
 
-#farm-edit  {
-  float: right!important;
+.navbar {
+  margin: 0 !important;
+
 }
