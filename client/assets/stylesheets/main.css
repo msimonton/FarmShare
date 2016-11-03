@@ -29,53 +29,99 @@ body {
   justify-content: center;
 }
 .vidContainer{
-  position: fixed;
-  max-height: 500px;
-  min-width: 100%;
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
 }
 video {
   padding: 0;
   margin-top: 0;
   padding-top: 0;
   position: relative;
-  width: auto;
   width: 100%;
-  min-width: 100%;
+  max-height: 100%;
   z-index: 1;
-  transform: translateY(-45%);
-  margin-bottom: -30%;
+  overflow: hidden;
+  overflow-y: hidden;
 }
 .stopfade {
    opacity: .5;
 }
 
-#farmshareText {
-  font-family: 'Roboto', sans-serif;
-  font-weight:100;
-  position: absolute;
-  background: rgba(0,0,0,0.3);
-  color: white;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -10%);
-  z-index: 2;
-}
-
 .mainJumboText {
-  font-size: 5rem !important;
-  margin-top: 0;
+  font-size: 3em ;
   letter-spacing: .2rem;
   color: #fff !important;
 }
 .jumboText {
   color: #fff !important;
-  text-decoration: none;
-  font-size: 2em !important;
+  font-size: 1em ;
+}
+a.linkcursor{
+  cursor: pointer !important;
+}
+#farmshareText {
+  font-family: 'Roboto', sans-serif;
+  font-size: 100% !important;
+  line-height: 2 !important;
+  font-weight:100;
+  position: absolute;
+  background: rgba(0,0,0,0.5);
+  padding: 5px;
+  color: white !important;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -10%);
+  z-index: 2;
+}
+.floatLeft{
+  display: block;
+  float: left;
+  margin-bottom: 0;
+  z-index: 4;
+  top: 0%;
+  transform: translate(0%, -20%);
+}
+.floatRight {
+  display: block;
+  float: right;
+  margin-bottom: 0;
+  z-index: 4;
+  transform: translate(0%, -20%);
 }
 /*END OF VIDEO STyLING*/
 .flex{
   display: flex;
-    justify-content: space-around;
+  justify-content: space-around;
+}
+.split{
+  justify-content: space-between !important;
+}
+.loginButton {
+  color: #333 !important;
+  background-color: transparent !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  position: relative !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  -webkit-tap-highlight-color: transparent !important;
+  vertical-align: baseline !important;
+  padding: 10px 15px;
+  width: 100px !important;
+  text-decoration: none !important;
+}
+a#login-sign-in-link.login-link-text {
+  color: #777 !important;
+  text-decoration: none !important;
+}
+a#login-sign-in-link.login-link-text:hover {
+  color: #333 !important;
+  text-decoration: none !important;
+}
+#login-dropdown-list {
+    position: absolute;
+    left: -150px !important;
 }
 .dropContainer{
   width: 25% !important;
@@ -182,4 +228,35 @@ video {
 .navbar {
   margin: 0 !important;
 
+}
+
+@media only screen and (min-width: 1100px) {
+#farmshareText {
+  font-size:200% !important;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+#farmshareText {
+  font-size:60% !important;
+  transform: translate(-50%, -60%);
+  }
+}
+
+@media only screen and (max-width: 400px) {
+#farmshareText {
+  font-size:50% !important;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  }
+}
+  @media only screen and (max-width: 340px) {
+  #farmshareText {
+    font-size:50% !important;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -90%);
+    width: 50%;
+    }
 }
