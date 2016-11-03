@@ -1,7 +1,7 @@
-body {
+/*body {
   height: 100%;
   width: 100%;
-}
+}*/
 .navbar {
   margin: 0 !important;
 }
@@ -16,33 +16,31 @@ body {
   border: 1px solid black;
   color: white;
   text-shadow: .5px .5px .5px .5px;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.9);
 }
 .textBox > a{
   color: white !important;
 }
 .darkBg{
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.95);
   width: 100px;
 }
 .center{
   justify-content: center;
 }
-.vidContainer{
-  position: absolute;
-  max-height: 100%;
-  max-width: 100%;
-}
-video {
+video.fullscreen {
   padding: 0;
   margin-top: 0;
   padding-top: 0;
-  position: relative;
-  width: 100%;
-  max-height: 100%;
-  z-index: 1;
-  overflow: hidden;
-  overflow-y: hidden;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  height: auto;
+  width: auto;
+  z-index: -100;
+  transform: translate(-50%,-9%);
 }
 .stopfade {
    opacity: .5;
@@ -69,25 +67,38 @@ a.linkcursor{
   background: rgba(0,0,0,0.5);
   padding: 5px;
   color: white !important;
-  top: 25%;
   left: 50%;
-  transform: translate(-50%, -10%);
+  transform: translate(-50%, 100%);
   z-index: 2;
 }
 .floatLeft{
-  display: block;
-  float: left;
+  position: absolute;
+  color: white !important;
   margin-bottom: 0;
-  z-index: 4;
-  top: 0%;
-  transform: translate(0%, -20%);
+  z-index: 40;
+  right: 87%;
+  transform: translate(0%, 997%);
+  text-decoration: none !important;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  font-size: 140% !important;
+  font-weight: bold;
 }
 .floatRight {
-  display: block;
-  float: right;
+  position: absolute;
+  color: white !important;
   margin-bottom: 0;
-  z-index: 4;
-  transform: translate(0%, -20%);
+  z-index: 40;
+  left: 89%;
+  transform: translate(0%, 997%);
+  text-decoration: none !important;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  font-size: 140% !important;
+  font-weight: bold;
+}
+.floatRight > a, .floatLeft > a {
+  color: white !important;
 }
 /*END OF VIDEO STyLING*/
 .flex{
@@ -237,26 +248,93 @@ a#login-sign-in-link.login-link-text:hover {
 }
 
 @media only screen and (max-width: 800px) {
-#farmshareText {
-  font-size:60% !important;
-  transform: translate(-50%, -60%);
+  video.fullscreen {
+    padding: 0;
+    margin-top: 0;
+    padding-top: 0;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    /*height: auto;
+    width: auto;*/
+    z-index: -100;
+    /*transform: translate(-50%,-9%);*/
+  }
+  #farmshareText {
+    font-size: 80% !important;
+    line-height: 2 !important;
+    font-weight:100;
+    position: absolute;
+    background: rgba(0,0,0,0.5);
+    padding: 5px;
+    color: white !important;
+    left: 50%;
+    transform: translate(-50%, 500%);
+    z-index: 2;
+  }
+  .floatLeft{
+    position: absolute;
+    margin-bottom: 0;
+    z-index: 40;
+    right: 67%;
+    transform: translate(0%, 900%);
+    padding: 20px;
+    font-size: 80% !important;
+  }
+  .floatRight {
+    position: absolute;
+    color: white !important;
+    margin-bottom: 0;
+    z-index: 40;
+    left: 71%;
+    transform: translate(0%, 900%);
+    padding: 20px;
+    font-size: 80% !important;
   }
 }
 
 @media only screen and (max-width: 400px) {
-#farmshareText {
-  font-size:50% !important;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -80%);
+  video.fullscreen {
+    padding: 0;
+    margin-top: 0;
+    padding-top: 0;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    /*height: auto;
+    width: auto;*/
+    z-index: -100;
+    /*transform: translate(-50%,-9%);*/
   }
-}
-  @media only screen and (max-width: 340px) {
   #farmshareText {
-    font-size:50% !important;
-    top: 25%;
+    font-size: 90% !important;
+    line-height: 2 !important;
+    font-weight:100;
+    position: absolute;
+    background: rgba(0,0,0,0.7);
+    padding: 5px;
+    color: white !important;
     left: 50%;
-    transform: translate(-50%, -90%);
-    width: 50%;
-    }
+    transform: translate(-50%, 175%);
+    z-index: 2;
+  }
+  .floatLeft{
+    position: absolute;
+    margin-bottom: 0;
+    z-index: 40;
+    right: 67%;
+    transform: translate(0%, 900%);
+    padding: 20px;
+    font-size: 80% !important;
+  }
+  .floatRight {
+    position: absolute;
+    color: white !important;
+    margin-bottom: 0;
+    z-index: 40;
+    left: 71%;
+    transform: translate(0%, 900%);
+    padding: 20px;
+    font-size: 80% !important;
+  }
 }
