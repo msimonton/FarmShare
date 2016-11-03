@@ -17,12 +17,14 @@ export default class ProductInputCtrl extends Controller {
     Products.insert({
        productName: this.productName,
        description:this.description,
-       price:this.price,
+       price: this.price,
        userId: Meteor.userId(),
        timestamp: Moment().subtract(1, 'hours').toDate()});
     this.reset();
   }
   reset(){
-    this.product = "";
+    this.productName = ""
+    this.description = ""
+    this.price = "";
   }
 }
