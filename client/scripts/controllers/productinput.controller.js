@@ -4,14 +4,14 @@ import { _ } from 'meteor/underscore';
 import { Meteor } from 'meteor/meteor';
 import Moment from 'moment';
 
-
-
-
-
 export default class ProductInputCtrl extends Controller {
   constructor($scope) {
     super();
     $scope.product = {}
+    $scope.showProduct = true
+    $scope.reveal = function()  {
+      $scope.showMember = !$scope.showProduct
+    }
   };
 
   submit(){
