@@ -35,17 +35,11 @@ header {
 	margin-left: 25px;
 	letter-spacing: 4px;
 }
-nav {
-	float: right;
-	width: 50%;
-	text-align: right;
-	margin-right: 25px;
-}
-header nav ul {
+header ul {
 	list-style: none;
 	float: right;
 }
-nav ul li {
+ul li {
 	float: left;
 	color: #FFFFFF;
 	font-size: 14px;
@@ -276,7 +270,7 @@ footer {
 	margin-bottom: 0px;
 	margin-left: 0px;
 }
-.container header nav {
+.container header {
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
@@ -285,9 +279,9 @@ footer {
 	float: none;
 	display: none;
 }
-header nav ul {
+header ul {
 }
-nav ul li {
+ul li {
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
@@ -363,7 +357,7 @@ nav ul li {
 	margin-left: 0px;
 	color: #043745;
 }
-.container header nav {
+.container header {
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
@@ -374,11 +368,11 @@ nav ul li {
 	display: inline-block;
 	background: #52bad5;
 }
-header nav ul {
+header ul {
 	padding: 0px;
 	float: none;
 }
-nav ul li {
+ul li {
 	margin-top: 0px;
 	margin-right: 0px;
 	margin-bottom: 0px;
