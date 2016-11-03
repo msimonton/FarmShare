@@ -20,7 +20,7 @@ export default class FarmerInputCtrl extends Controller {
     imageUrl: this.imageUrl,
     location: this.location,
     info: this.info,
-    user_id:this.user_id,
+    user_id: Meteor.userId(),
     timestamp: Moment().subtract(1, 'hours').toDate()
   });
     this.reset();
