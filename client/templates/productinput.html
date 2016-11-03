@@ -1,15 +1,22 @@
-<div>
-
-  <div>
-  </div>
-  <h1>wow</h1>
-  <label class="item-input-wrapper">
-    <input ng-model="product.product"
-               dir="auto"
-               type="text"/>
-  </label>
-
-      <span ng-if="product.product.length > 0">
-     <button ng-click="product.submit()">Submit</button>
-   </span>
-</div>
+<ion-view view-title="productForm">
+  <ion-content>
+   <div>
+     <div class="formContain" ng-show="showProduct">
+       <h1 class="marginBottom">Edit Products</h1>
+       <form class="marginLR" >
+         <label class="marginTop"for="productName">Enter The Product Name</label>
+         <input type="text" name="productName" ng-model='product.productName'placeholder="Apples" required/>
+         <label class="marginTop" for="description">Prouct Description</label>
+        <textarea rows="4" cols="50" name="description" ng-model='product.description'></textarea>
+         <label class="marginTop"for="productPrice">Enter The Product Price</label>
+         <input type="number" name="productPrice" ng-model='product.price'placeholder="2" required/>
+        <button ng-click="product.submit()" href='/#/farm/landing'>Submit</button>
+        <div id='closeButton'>
+          <button><a href="/#/farm/landing">Close</a></button>
+        </div>
+      </span>
+    </form>
+    </div>
+   </div>
+ </ion-content>
+</ion-view>

@@ -9,7 +9,7 @@ import Loader from 'angular-ecmascript/module-loader';
 import { Meteor } from 'meteor/meteor';
 
 // Modules
-import signup from '../controllers/signup.controller';
+import farmer from '../controllers/signup.controller';
 import product from '../controllers/product.controller';
 import productinput from '../controllers/productinput.controller';
 import faq from '../controllers/faq.controller';
@@ -22,11 +22,10 @@ Angular.module(App, [
   'angular-meteor',
   'accounts.ui',
   'ionic'
-]);
+])
 
 new Loader(App)
-  .load(signup)
-  // .load(login)
+  .load(farmer)
   .load(product)
   .load(productinput)
   .load(faq)
