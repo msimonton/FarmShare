@@ -1,9 +1,11 @@
-<ion-view view-title="login">
-  <ion-content>
-        <div class="bg"></div>
-        <div class="jumbotron">
-          <h1>FarmShare</h1>
-          <p class="lead">Eliminate the middle man and connect directly with local farms in order to lower costs for responsibly grown food and increase the profit margins for your local farms.</p>
-        </div>
+<ion-view title="Login">
+  <ion-content class="login">
+    <div class="list">
+      <label class="item item-input">
+        <input ng-model="logger.username" type="text" placeholder="Your Username">
+      </label>
+      <button ng-click="logger.login()">Submit</button>
+      <login-buttons></login-buttons>
+    </div>
   </ion-content>
 </ion-view>

@@ -55,6 +55,7 @@ export default class RoutesConfig extends Config {
         views: {
           'tab-landing': {
             templateUrl: 'client/templates/login.html',
+            // controller: 'LoginCtrl as logger'
           }
         }
       })
@@ -71,7 +72,17 @@ export default class RoutesConfig extends Config {
         views: {
           'tab-landing': {
             templateUrl: 'client/templates/memberform.html',
-            controller: 'signup as signup'
+            controller: 'signup as signup',
+            resolve: {
+              currentUser($q) {
+                console.log(Meteor.userId())
+                if (Meteor.userId() === null) {
+                  return $q.reject(this.$urlRouterProvider.otherwise('farm/landing'));
+                } else {
+                  return $q.resolve();
+                }
+              }
+            }
           }
         }
       })
@@ -80,7 +91,17 @@ export default class RoutesConfig extends Config {
         views: {
           'tab-landing': {
             templateUrl: 'client/templates/productinput.html',
-            controller:'ProductInputCtrl as product'
+            controller:'ProductInputCtrl as product',
+            resolve: {
+              currentUser($q) {
+                console.log(Meteor.userId())
+                if (Meteor.userId() === null) {
+                  return $q.reject(this.$urlRouterProvider.otherwise('farm/landing'));
+                } else {
+                  return $q.resolve();
+                }
+              }
+            }
           }
         }
       });

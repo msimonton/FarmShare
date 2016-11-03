@@ -1,5 +1,6 @@
 import 'angular-animate';
 import 'angular-meteor';
+import 'angular-meteor-auth';
 import 'angular-sanitize';
 import 'angular-ui-router';
 import 'ionic-scripts';
@@ -12,17 +13,20 @@ import signup from '../controllers/signup.controller';
 import product from '../controllers/product.controller';
 import productinput from '../controllers/productinput.controller';
 import faq from '../controllers/faq.controller';
+// import login from '../controllers/login.controller';
 import RoutesConfig from '../routes';
 const App = 'Farmshare';
 
 // App
 Angular.module(App, [
   'angular-meteor',
+  'accounts.ui',
   'ionic'
 ]);
 
 new Loader(App)
   .load(signup)
+  // .load(login)
   .load(product)
   .load(productinput)
   .load(faq)
