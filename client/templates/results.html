@@ -1,6 +1,11 @@
 <div class="jumbotron">
-  <div ng-repeat="items in searchResults">
-    
-
+  <div ng-repeat="r in results">
+    <div class="align">
+      {{r.imageUrl}}
+      <a href='{{r.name}}'>{{r.name}}</a>
+    </div>
+    <div ng-repeat="item in r.products">
+      {{item.name}}
+    </div>
   </div>
 </div>
