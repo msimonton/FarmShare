@@ -4,19 +4,14 @@ import { _ } from 'meteor/underscore';
 import { Meteor } from 'meteor/meteor';
 import Moment from 'moment';
 
-
-
-
-
 export default class ProductInputCtrl extends Controller {
   constructor($scope) {
     super();
     $scope.product = {}
+    console.log(Meteor.userId());
   };
-
   submit(){
-    console.log(this.product)
-    Products.insert({product: this.product, timestamp: Moment().subtract(1, 'hours').toDate()});
+    Products.insert({product: this.product, timestamp: Moment().subtract(1, 'hours').toDate(), userId: Meteor.userId()});
     this.reset();
   }
   reset(){
