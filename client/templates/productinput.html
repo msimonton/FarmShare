@@ -10,8 +10,16 @@
         <textarea rows="4" cols="50" name="description" ng-model='product.description'></textarea>
          <label class="marginTop"for="productPrice">Enter The Product Price</label>
          <input type="number" name="productPrice" ng-model='product.price'placeholder="2" required/>
+         <label class="marginTop"for="isOrganic">Type of Product</label><br>
+         <select name="isOrganic" id="singleSelect" ng-model="product.selectType">
+          <option value="">---Please select---</option>
+          <option value="Organic">Eggs</option>
+          <option value="Fresh Produce">Fresh Produce</option>
+          <option value="Meat and Poultry">Meat and Poultry</option>
+          <option value="Other">Other</option>
+        </select><br>
          <label class="marginTop"for="isOrganic">Is this product organic?</label><br>
-         <select name="isOrganic" id="singleSelect" ng-model="product.select">
+         <select name="isOrganic" id="singleSelect" ng-model="product.selectOrg">
           <option value="">---Please select---</option>
           <option value="Organic">Organic</option>
           <option value="Non-Organic">Non-Organic</option>

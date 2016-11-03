@@ -20,7 +20,8 @@ export default class ProductInputCtrl extends Controller {
        description:this.description,
        price: this.price,
        userId: Meteor.userId(),
-       organic: this.select,
+       productType:this.selectType,
+       organic: this.selectOrg,
        timestamp: Moment().subtract(1, 'hours').toDate()})
        this.reset();
   }
