@@ -15,7 +15,6 @@ export default class RoutesConfig extends Config {
           }
         }
       })
-
       .state('tab.faq', {
         url: '/FAQ',
         views: {
@@ -31,7 +30,7 @@ export default class RoutesConfig extends Config {
           'tab-landing': {
             templateUrl: 'client/templates/farmInfo.html',
             controller: 'ProductCtrl as product',
-            css: "client/stylesheets/farmInfo.css"
+            css: "client/assets/stylesheets/farmInfo.css"
           }
         }
       })
