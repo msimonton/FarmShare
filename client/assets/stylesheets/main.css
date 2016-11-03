@@ -29,21 +29,20 @@ body {
   justify-content: center;
 }
 .vidContainer{
-  position: fixed;
-  max-height: 500px;
-  min-width: 100%;
+  position: absolute;
+  max-height: 100%;
+  max-width: 100%;
 }
 video {
   padding: 0;
   margin-top: 0;
   padding-top: 0;
   position: relative;
-  width: auto;
   width: 100%;
-  min-width: 100%;
+  max-height: 100%;
   z-index: 1;
-  transform: translateY(-45%);
-  margin-bottom: -30%;
+  overflow: hidden;
+  overflow-y: hidden;
 }
 .stopfade {
    opacity: .5;
@@ -58,23 +57,71 @@ video {
   color: #fff !important;
   font-size: 1em ;
 }
+a.linkcursor{
+  cursor: pointer !important;
+}
 #farmshareText {
   font-family: 'Roboto', sans-serif;
   font-size: 100% !important;
   line-height: 3 !important;
   font-weight:100;
   position: absolute;
-  background: rgba(0,0,0,0.3);
+  background: rgba(0,0,0,0.5);
+  padding: 5px;
   color: white !important;
   top: 25%;
   left: 50%;
-  transform: translate(-50%, -20%);
+  transform: translate(-50%, -10%);
   z-index: 2;
+}
+.floatLeft{
+  display: block;
+  float: left;
+  margin-bottom: 0;
+  z-index: 4;
+  top: 0%;
+  transform: translate(0%, -20%);
+}
+.floatRight {
+  display: block;
+  float: right;
+  margin-bottom: 0;
+  z-index: 4;
+  transform: translate(0%, -20%);
 }
 /*END OF VIDEO STyLING*/
 .flex{
   display: flex;
-    justify-content: space-around;
+  justify-content: space-around;
+}
+.split{
+  justify-content: space-between !important;
+}
+.loginButton {
+  color: #333 !important;
+  background-color: transparent !important;
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
+  position: relative !important;
+  display: block !important;
+  box-sizing: border-box !important;
+  -webkit-tap-highlight-color: transparent !important;
+  vertical-align: baseline !important;
+  padding: 10px 15px;
+  width: 100px !important;
+  text-decoration: none !important;
+}
+a#login-sign-in-link.login-link-text {
+  color: #777 !important;
+  text-decoration: none !important;
+}
+a#login-sign-in-link.login-link-text:hover {
+  color: #333 !important;
+  text-decoration: none !important;
+}
+#login-dropdown-list {
+    position: absolute;
+    left: -150px !important;
 }
 .dropContainer{
   width: 25% !important;
