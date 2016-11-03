@@ -1,20 +1,22 @@
-
- <div>
-   <div class="formContain" ng-show="showProduct">
-     <h1 class="marginBottom">Edit Products</h1>
-     <form class="marginLR" >
-       <label class="marginTop"for="productName">Enter The Product Name</label>
-       <input type="text" name="productName" ng-model='product.productName'placeholder="Apples" required/>
-       <label class="marginTop" for="description">Prouct Description</label>
-       <input type="text" name="description" ng-model='product.description' placeholder="Organic green apples" required/>
-       <label class="marginTop"for="productName">Enter The Product Price</label>
-       <input type="number" name="productPrice" ng-model='product.price'placeholder="2" required/>
-       <span ng-if="product.productName.length > 0">
-      <button ng-click="product.submit()" href='/#/farm/landing'>Submit</button>
-      <div id='closeButton'>
-        <a href="/#/farm/landing">Close</button>
-      </div>
-    </span>
-  </form>
-  </div>
- </div>
+<ion-view view-title="productForm">
+  <ion-content>
+   <div>
+     <div class="formContain" ng-show="showProduct">
+       <h1 class="marginBottom">Edit Products</h1>
+       <form class="marginLR" >
+         <label class="marginTop"for="productName">Enter The Product Name</label>
+         <input type="text" name="productName" ng-model='product.productName'placeholder="Apples" required/>
+         <label class="marginTop" for="description">Prouct Description</label>
+        <textarea rows="4" cols="50" name="description" ng-model='product.description'></textarea>
+         <label class="marginTop"for="productPrice">Enter The Product Price</label>
+         <input type="number" name="productPrice" ng-model='product.price'placeholder="2" required/>
+        <button ng-click="product.submit()" href='/#/farm/landing'>Submit</button>
+        <div id='closeButton'>
+          <button><a href="/#/farm/landing">Close</a></button>
+        </div>
+      </span>
+    </form>
+    </div>
+   </div>
+ </ion-content>
+</ion-view>
