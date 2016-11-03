@@ -1,17 +1,17 @@
 module.exports = {
   servers: {
     one: {
-      host: '1.2.3.4',
-      username: 'root'
-      // pem:
+      host: 'ec2-52-53-216-176.us-west-1.compute.amazonaws.com',
+      username: 'ec2-user',
+      pem: './Farmshare.pem'
       // password:
       // or leave blank for authenticate from ssh-agent
     }
   },
 
   meteor: {
-    name: 'app',
-    path: '../app',
+    name: 'FarmShare',
+    path: '../FarmShare',
     servers: {
       one: {}
     },
@@ -19,7 +19,7 @@ module.exports = {
       serverOnly: true,
     },
     env: {
-      ROOT_URL: 'app.com',
+      ROOT_URL: 'ec2-52-53-216-176.us-west-1.compute.amazonaws.com',
       MONGO_URL: 'mongodb://localhost/meteor'
     },
 
@@ -31,7 +31,7 @@ module.exports = {
     oplog: true,
     port: 27017,
     servers: {
-      one: {},
-    },
-  },
+      one: {}
+    }
+  }
 };
