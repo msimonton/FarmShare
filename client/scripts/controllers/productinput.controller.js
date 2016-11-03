@@ -12,6 +12,7 @@ export default class ProductInputCtrl extends Controller {
     $scope.reveal = function()  {
       $scope.showMember = !$scope.showProduct
     }
+
   };
   submit(){
     Products.insert({
@@ -19,12 +20,14 @@ export default class ProductInputCtrl extends Controller {
        description:this.description,
        price: this.price,
        userId: Meteor.userId(),
-       timestamp: Moment().subtract(1, 'hours').toDate()});
-    this.reset();
+       organic: this.select,
+       timestamp: Moment().subtract(1, 'hours').toDate()})
+       this.reset();
   }
   reset(){
     this.productName = ""
     this.description = ""
     this.price = "";
+    this.organic = "";
   }
 }

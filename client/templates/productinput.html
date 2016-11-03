@@ -10,9 +10,15 @@
         <textarea rows="4" cols="50" name="description" ng-model='product.description'></textarea>
          <label class="marginTop"for="productPrice">Enter The Product Price</label>
          <input type="number" name="productPrice" ng-model='product.price'placeholder="2" required/>
-        <button ng-click="product.submit()" href='/#/farm/landing'>Submit</button>
+         <label class="marginTop"for="isOrganic">Is this product organic?</label><br>
+         <select name="isOrganic" id="singleSelect" ng-model="product.select">
+          <option value="">---Please select---</option>
+          <option value="Organic">Organic</option>
+          <option value="Non-Organic">Non-Organic</option>
+        </select>
+        <a href='/#/farm/landing'><button ng-click="product.submit()">Submit</button></a>
         <div id='closeButton'>
-          <button><a href="/#/farm/landing">Close</a></button>
+          <a href="/#/farm/landing"><button>Close</button></a>
         </div>
       </span>
     </form>
