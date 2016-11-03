@@ -9,7 +9,6 @@ import { Meteor } from 'meteor/meteor';
 
 // Modules
 import signup from '../controllers/signup.controller';
-import map from '../controllers/map.controller';
 import product from '../controllers/product.controller';
 import productinput from '../controllers/productinput.controller';
 import faq from '../controllers/faq.controller';
@@ -39,10 +38,4 @@ else {
 
 function onReady() {
   Angular.bootstrap(document, [App]);
-}
-
-if (Meteor.isClient) {
-  Meteor.startup(function() {
-    GoogleMaps.load();
-  })
 }
