@@ -8,10 +8,18 @@ export default class ProductInputCtrl extends Controller {
   constructor($scope) {
     super();
     $scope.product = {}
-    console.log(Meteor.userId());
+    $scope.showProduct = true
+    $scope.reveal = function()  {
+      $scope.showMember = !$scope.showProduct
+    }
   };
   submit(){
-    Products.insert({product: this.product, timestamp: Moment().subtract(1, 'hours').toDate(), userId: Meteor.userId()});
+    Products.insert({
+       productName: this.productName,
+       description:this.description,
+       price:this.price,
+       userId: Meteor.userId(),
+       timestamp: Moment().subtract(1, 'hours').toDate()});
     this.reset();
   }
   reset(){

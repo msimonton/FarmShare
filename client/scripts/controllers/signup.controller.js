@@ -1,15 +1,40 @@
-import stuff from '../controllers/db.service';
 import { Controller } from 'angular-ecmascript/module-helpers';
-export default class signup extends Controller {
+import { Farmers } from '../../../lib/collections';
+import { _ } from 'meteor/underscore';
+import { Meteor } from 'meteor/meteor';
+import Moment from 'moment';
 
-  constructor ($scope) {
-    super()
-    $scope.products = stuff.products
-    $scope.showMember = false
+
+export default class FarmerInputCtrl extends Controller {
+  constructor($scope) {
+    super();
+    $scope.farmer = {}
     $scope.showFarmer = true
     $scope.reveal = function () {
-      $scope.showMember = !$scope.showMember
       $scope.showFarmer = !$scope.showFarmer
     }
+  };
+  submit(){
+    Farmers.insert({farmName: this.farmName,
+    phoneNumber: this.phoneNumber,
+    imageUrl: this.imageUrl,
+    location: this.location,
+    info: this.info,
+    user_id:this.user_id,
+    timestamp: Moment().subtract(1, 'hours').toDate()
+  });
+    this.reset();
+    $window.location.href = '/#/farm/landing';
+
   }
+  reset(){
+    this.farmName = ""
+    this.phoneNumber = ""
+    this.imageUrl = ""
+    this.location = ""
+    this.info = "";
+
+
+  }
+
 }
