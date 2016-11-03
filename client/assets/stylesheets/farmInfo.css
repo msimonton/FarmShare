@@ -231,12 +231,12 @@ footer .footer_column p {
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 2px;
-	border: 3px solid #FFFFFF;
-	color: #FFFFFF;
+	border: 3px solid #6EB82D;
+	color: #6EB82D;
 	transition: all 0.3s linear;
 }
 .button:hover {
-	background-color: #FEFEFE;
+	background-color: #48781D;
 	color: #C4C4C4;
 	cursor: pointer;
 }
