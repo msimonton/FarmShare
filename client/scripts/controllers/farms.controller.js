@@ -5,6 +5,7 @@ export default class FarmerInputCtrl extends Controller {
     super();
     $scope.helpers({
           data() {
+            console.log(Farmers.find());
             return Farmers.find();
           }
     })
