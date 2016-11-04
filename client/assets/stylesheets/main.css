@@ -157,7 +157,8 @@ a#login-sign-in-link.login-link-text:hover {
   border: .15vw solid rgba(0, 0, 0, .3);
   border-radius: .5em;
   margin-left: 25%;
-  margin-top: 2%;
+  margin-top: 1%;
+  background-color: rgba(214, 214, 214, .6)
 }
 
 .marginTop{
@@ -259,4 +260,12 @@ a#login-sign-in-link.login-link-text:hover {
     transform: translate(-50%, -90%);
     width: 50%;
     }
+}
+
+.scroll {
+  background-color:rgb(43, 42, 42)
+}
+
+.btn btn-default  {
+  margin: auto;
 }
