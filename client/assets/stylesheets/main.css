@@ -200,14 +200,18 @@ a#login-sign-in-link.login-link-text:hover {
   border: .15vw solid rgba(0, 0, 0, .3);
   border-radius: .5em;
 }
-
+.marginBottom{
+  margin-bottom: 5px !important;
+}
 .marginLR > textarea{
   border: .15vw solid rgba(0, 0, 0, .3);
   border-radius: .5em;
   margin-left: 1vw;
   margin-bottom: .5vw;
 }
-
+.backgroundResults, .pane {
+  overflow: scroll !important;
+}
 .align{
   display: flex;
   flex-direction: row;
