@@ -21,13 +21,13 @@ export default class FarmerInputCtrl extends Controller {
     location: this.location,
     info: this.info,
     user_id: Meteor.userId(),
-    timestamp: Moment().subtract(1, 'hours').toDate()
+    timestamp: Moment().subtract(1, 'hours').toDate(),
   });
     this.reset();
-    $window.location.href = '/#/farm/landing';
 
   }
   reset(){
+
     this.farmName = ""
     this.phoneNumber = ""
     this.imageUrl = ""
