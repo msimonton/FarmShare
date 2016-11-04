@@ -2,9 +2,17 @@
   <div ng-repeat="r in data">
     <div class="align">
       <a href='/#/farm/farminfo/{{r.user_id}}'>{{r.farmName}}</a>
+      <p>
+        {{r.info}}
+      </p>
+      <p>
+        {{r.location}}
+      </p>
     </div>
-    <div ng-repeat="item in r.products">
-      {{item.name}}
-    </div>
+    <!-- <div ng-repeat="item in r.products">
+      {{item.farmName}}
+      <!-- {{item.name}} -->
+
+    <!-- </div> -->
   </div>
 </div>
