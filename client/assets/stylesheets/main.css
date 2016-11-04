@@ -115,9 +115,6 @@ a.linkcursor{
 .transparent{
   background: rgba(0,0,0,0.5);
 }
-.cardBack{
-  background: #f8f8f8;
-}
 .loginButton {
   color: #333 !important;
   background-color: transparent !important;
@@ -260,7 +257,9 @@ a#login-sign-in-link.login-link-text:hover {
 .products{
   width: 40vw;
 }
-
+.cardBack{
+  background-color: #EEEEEE !important;
+}
 .navbar {
   margin: 0 !important;
 
