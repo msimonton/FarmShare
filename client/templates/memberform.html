@@ -12,11 +12,11 @@
         <input type="url" name="imageUrl" ng-model='farmer.imageUrl'/>
         <label class="marginTop" for="info">Info About Your Farm</label>
         <textarea rows="4" cols="50" name="info" ng-model='farmer.info'></textarea>
-        <button ng-click="farmer.submit()">submit</button>
+        <a href='/#/farm/landing'><button ng-click="farmer.submit()">Submit</button></a>
+        <div id='closeButton'>
+          <a href="/#/farm/landing"><button>Close</button></a>
+        </div>
       </form>
-      <div id='closeButton'>
-        <button><a href="/#/farm/landing">Close</a></button>
-      </div>
     </div>
   </ion-content>
 </ion-view>
