@@ -11,11 +11,15 @@ body {
 	font-weight: 200;
 }
 /* Container */
-<<<<<<< HEAD
 .containerFarm {
-=======
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 1000px;
+	background-color: #FFFFFF;
+}
 .container2 {
->>>>>>> 54f71fc05d9267cf5dbb01b10eb712d88faf7d4b
+
 	width: 90%;
 	margin-left: auto;
 	margin-right: auto;
@@ -484,8 +488,8 @@ ul li {
 	margin-top: 0px;
 	padding-top: 0px;
 }
-}
 
+}
 .hero2 {
 	/*background-color: #B3B3B3;*/
 	background-image: url('/farmForm.jpg');
