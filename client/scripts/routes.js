@@ -64,7 +64,7 @@ export default class RoutesConfig extends Config {
         views: {
           'tab-landing': {
             templateUrl: 'client/templates/memberform.html',
-            controller: 'FarmerInputCtrl as farmer'
+            controller: 'FarmerInputCtrl as farmer',
           }
         }
       })

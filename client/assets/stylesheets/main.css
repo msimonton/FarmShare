@@ -109,6 +109,12 @@ a.linkcursor{
 .split{
   justify-content: space-between !important;
 }
+.padding5px{
+  padding: 5px !important;
+}
+.transparent{
+  background: rgba(0,0,0,0.5);
+}
 .loginButton {
   color: #333 !important;
   background-color: transparent !important;
@@ -194,14 +200,18 @@ a#login-sign-in-link.login-link-text:hover {
   border: .15vw solid rgba(0, 0, 0, .3);
   border-radius: .5em;
 }
-
+.marginBottom{
+  margin-bottom: 5px !important;
+}
 .marginLR > textarea{
   border: .15vw solid rgba(0, 0, 0, .3);
   border-radius: .5em;
   margin-left: 1vw;
   margin-bottom: .5vw;
 }
-
+.backgroundResults, .pane {
+  overflow: scroll !important;
+}
 .align{
   display: flex;
   flex-direction: row;
@@ -218,6 +228,12 @@ a#login-sign-in-link.login-link-text:hover {
   width: 50%;
   background-color: transparent;
 }
+.center3{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: transparent;
+}
 .center2{
   text-align: center;
 }
@@ -230,7 +246,12 @@ a#login-sign-in-link.login-link-text:hover {
   background-image: url('https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAjfAAAAJDY5MjRlMDhmLWFhMWItNDdlOS1iNTE1LTA4YWQ4Y2ZlYzZiNA.jpg');
   background-position: center;
 }
-
+.backgroundResults{
+  background-image: url('/farm_wallpaper.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .formButton {
   height: 3vw;
   width: 16vw;
@@ -240,7 +261,9 @@ a#login-sign-in-link.login-link-text:hover {
 .products{
   width: 40vw;
 }
-
+.cardBack{
+  background-color: #EEEEEE !important;
+}
 .navbar {
   margin: 0 !important;
 
@@ -344,10 +367,15 @@ a#login-sign-in-link.login-link-text:hover {
   }
 }
 
-.scroll {
+/*.scroll {
   background-color:rgb(43, 42, 42)
-}
-
+}*/
+/*.scroll{
+  background-image: url('/farm_wallpaper.jpg') !important;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}*/
 .btn btn-default  {
   margin: auto;
 }
