@@ -41,7 +41,12 @@
      <p>Items Available: {{}}</p>
    </div>
 
-
+   <div ng-repeat="p in data" class="thumbnail">
+     {{p.productName}}
+     {{p.price}}
+     {{p.description}}
+     {{p.organic}}
+   </div>
  </div>
  <!-- More Info Section -->
  <footer>
@@ -68,8 +73,3 @@
 
 </ion-content>
 </ion-view>
-<div>
- <div ng-repeat="p in data">
-   {{p.product}}
- </div>
-</div>

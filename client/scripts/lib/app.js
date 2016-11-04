@@ -13,7 +13,8 @@ import farmer from '../controllers/signup.controller';
 import product from '../controllers/product.controller';
 import productinput from '../controllers/productinput.controller';
 import faq from '../controllers/faq.controller';
-// import login from '../controllers/login.controller';
+import result from '../controllers/result.controller';
+// import resultserv from '../controllers/result.service';
 import RoutesConfig from '../routes';
 const App = 'Farmshare';
 
@@ -29,6 +30,7 @@ new Loader(App)
   .load(product)
   .load(productinput)
   .load(faq)
+  .load(result)
   .load(RoutesConfig);
 
 // Startup

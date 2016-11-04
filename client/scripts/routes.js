@@ -25,12 +25,12 @@ export default class RoutesConfig extends Config {
         }
       })
       .state('tab.farminfo', {
-        url: '/farminfo',
+        url: '/farminfo/:id',
         views: {
           'tab-landing': {
             templateUrl: 'client/templates/farmInfo.html',
             controller: 'ProductCtrl as product',
-            css: "client/assets/stylesheets/farmInfo.css"
+            css: 'client/assets/stylesheets/farmInfo.css'
           }
         }
       })
@@ -83,6 +83,15 @@ export default class RoutesConfig extends Config {
                 }
               }
             }
+          }
+        }
+      })
+      .state('tab.results', {
+        url: '/results',
+        views: {
+          'tab-landing': {
+            templateUrl: 'client/templates/results.html',
+            controller: 'ResultsCtrl as results'
           }
         }
       })
