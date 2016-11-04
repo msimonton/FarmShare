@@ -351,3 +351,16 @@ a#login-sign-in-link.login-link-text:hover {
 .btn btn-default  {
   margin: auto;
 }
+
+#formButton{
+  float:right;
+  display: inline;
+}
+#formBtn  {
+  display:inline;
+}
+
+#formHeader {
+  align-items: center;
+  margin: auto;
+}

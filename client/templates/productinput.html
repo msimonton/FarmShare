@@ -4,7 +4,7 @@
     <section class="hero2" id="hero2">
    <div>
      <div class="formContain" ng-show="showProduct">
-       <h1 class="marginBottom">Add Product</h1>
+       <h1 class="marginBottom" id='formHeader'>Add Product</h1>
        <form class="marginLR" >
          <div class="form-group">
          <label class="marginTop"for="productName">Enter The Product Name</label>
@@ -36,9 +36,9 @@
           <option value="Non-Organic">Non-Organic</option>
         </select>
       </div>
-        <a href='/#/farm/landing'><button class="btn btn-default" ng-click="product.submit()">Submit</button></a>
+        <a href='/#/farm/landing'><button type="button" class="btn btn-primary" ng-click="product.submit()" id='formBtn'>Submit</button></a>
         <div id='closeButton'>
-          <a href="/#/farm/landing"><button class="btn btn-default">Close</button></a>
+          <a href="/#/farm/landing"><button type="button" class="btn btn-primary" id='formButton'>Close</button></a>
         </div>
       </span>
     </form>

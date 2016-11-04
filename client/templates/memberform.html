@@ -1,22 +1,26 @@
 <ion-view view-title="productForm">
   <ion-content>
+    <div class="container2">
+    <section class="hero2" id="hero2">
     <div class="formContain" ng-show="showFarmer">
-      <h1 class="marginBottom">Grower Sign Up</h1>
+      <h1 class="marginBottom" id="formHeader">Grower Sign Up</h1>
       <form class="marginLR" >
         <label class="marginTop"for="farmName">Please Enter Your Name</label>
-        <input type="text" name="farmName" ng-model='farmer.farmName'placeholder="First" required/>
+        <input type="text" class="form-control" name="farmName" ng-model='farmer.farmName'placeholder="First" required/>
         <label class="marginTop" for="location">Where are you located</label>
-        <input type="text" name="location" ng-model='farmer.location' placeholder="City, State" required/>
-        <input type="text" name="phoneNumber" ng-model='farmer.phoneNumber'placeholder="Phone Number" required/>
+        <input type="text" class="form-control" name="location" ng-model='farmer.location' placeholder="City, State" required/>
+        <input type="text" class="form-control" name="phoneNumber" ng-model='farmer.phoneNumber'placeholder="Phone Number" required/>
         <label class="marginTop" for="imageUrl">Picture URL</label>
-        <input type="url" name="imageUrl" ng-model='farmer.imageUrl'/>
+        <input type="url"  class="form-control" name="imageUrl" ng-model='farmer.imageUrl'/>
         <label class="marginTop" for="info">Info About Your Farm</label>
-        <textarea rows="4" cols="50" name="info" ng-model='farmer.info'></textarea>
-        <a href='/#/farm/landing'><button ng-click="farmer.submit()">Submit</button></a>
+        <textarea rows="4" class="form-control" cols="50" name="info" ng-model='farmer.info'></textarea>
+        <a href='/#/farm/landing'><button type="button" class="btn btn-primary"ng-click="farmer.submit()" id='formBtn'>Submit</button></a>
         <div id='closeButton'>
-          <a href="/#/farm/landing"><button>Close</button></a>
+          <a href="/#/farm/landing"><button type="button" class="btn btn-primary" id='formButton'>Close</button></a>
         </div>
       </form>
+    </div>
+  </section>
     </div>
   </ion-content>
 </ion-view>
