@@ -6,7 +6,7 @@
   margin: 0 !important;
 }
 .faqBody{
-  background-image: url('/farm_wallpaper.jpg');
+  background-image: url('/farm_wallpaper.jpg') !important;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -216,6 +216,9 @@ a#login-sign-in-link.login-link-text:hover {
   justify-content: center;
   width: 50%;
   background-color: transparent;
+}
+.center2{
+  text-align: center;
 }
 
 .userImage{
